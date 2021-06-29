@@ -1,0 +1,22 @@
+<html>
+	<title>With Statement</title>
+<script>
+	
+	// tanpa statement object
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli"
+	}
+	
+	console.info(person.firstName)
+	console.info(person.lastName)
+	
+	// dengan statement object
+	with (person) {
+	console.info(firstName)
+	console.info(lastName)
+	}
+	
+	// with statement tidak direkomedasikan karga membuat kode ambigu
+</script>
+

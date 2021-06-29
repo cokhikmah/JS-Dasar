@@ -1,0 +1,37 @@
+<html>
+	<title>Tipe Data Array</title>
+<script>
+	let arrayKosong = []
+	
+	let arrayNama = ["Muhammad", "Rafi"]
+	
+	const names = [];
+	names.push("Muhammad")
+	names.push("Rafli")
+	names.push("brothers")
+	names.length
+	
+	console.table(names)
+	
+	console.info(names[0])
+	console.info(names[1])
+	console.info(names[2])
+	
+	names[0] = "Cokhikmah"
+	names[1] = "Everywere"
+	names[2] = "Everytime"
+	
+	console.table(names)
+	
+	delete names[2]
+	
+	names[2] = "Modify"
+	names.push(1,2,3)
+	names.push(["Rafli", "COKHIKMAH"])
+	
+	console.table(names)
+	
+	names.push("Muhammad Rafli")
+	
+	console.table(names)
+</script>

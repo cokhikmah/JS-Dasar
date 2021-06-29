@@ -1,0 +1,18 @@
+<html>
+	<title>Function dalam Function</title>
+<script>
+
+	function outer() {
+	
+		function inner() {
+			console.info("inner")
+		}
+		
+		inner()
+	}
+	
+	outer()
+	// function didalam function tidak bisa dipanggil diluar 
+	inner()
+
+</script>

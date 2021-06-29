@@ -1,0 +1,19 @@
+<html>
+	<title>For In</title>
+<script>
+
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli"
+	}
+	
+	for(const property in person) {
+		document.writeln(`<p>${property} : ${person[property]}</p>`)
+	}
+	
+	const names = ["Muhammad", "Rafli"]
+	for(const index in names) {
+		document.writeln(`<p>${index} : ${names[index]}</p>`)
+	}
+
+</script>

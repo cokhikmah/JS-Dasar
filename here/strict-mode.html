@@ -1,0 +1,18 @@
+<html>
+	<title>Strict Mode</title>
+<script>
+
+	function useStrictMode() {
+		'use strict'
+		const person = {
+			firstName: "Muhammad"
+		}
+		
+		//error
+		with (person) {
+			console.info(firstName)
+		}
+	}
+	
+	useStrictMode()
+</script>

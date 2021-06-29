@@ -1,0 +1,25 @@
+<html>
+	<title>Optional Chainning</title>
+<script>
+
+	const person = {
+		address: {
+			country: "INDONESIA"
+		}
+	}
+	
+	// dengan optional chainning
+	let country = person?.address?.country
+	
+	// tanpa optional chainning
+	//if(person.address !== undefined && person.address !== null) {
+	//	country = person.address.country
+	//}
+	
+	document.writeln(`SUKSES`)
+	
+	document.writeln(`<p>${country}</p>`)
+	
+	document.writeln(`SUKSES`)
+
+</script>

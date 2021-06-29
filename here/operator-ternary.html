@@ -1,0 +1,22 @@
+<html>
+	<title>Operator Ternary</title>
+<script>
+
+	//tanpa ternary operator
+	const nilai = 75
+	let ucapan
+	
+	if(nilai >= 75) {
+		ucapan = "Selamat anda lulus"
+	} else {
+		ucapan = "Silahkan coba lagi"
+	}
+	
+	document.writeln(`<p>${ucapan}</p>`)
+	
+	//dengan ternary operator
+	const nilai2 = 60
+	const ucapan2 = nilai2 >= 75 ? "Selamat anda lulus" : "Silahkan coba lagi"
+	
+	document.writeln(`<p>${ucapan2}</p>`)
+</script>

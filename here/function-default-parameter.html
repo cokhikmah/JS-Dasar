@@ -1,0 +1,16 @@
+<html>
+	<title>Function Default Parameter</title>
+<script>
+
+	function register(name, gender = "UNKNOWN") {
+		console.log(name)
+		console.log(gender)
+	}
+	
+	register()
+	register("Muhammad", "MALE")
+	register("Rafli")
+	register("Other", undefined)
+	register("Other", null)
+	
+</script>

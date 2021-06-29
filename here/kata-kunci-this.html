@@ -1,0 +1,29 @@
+<html>
+	<title>Kata Kunci This</title>
+<script>
+
+	console.info(this)
+	
+	// kata kunci kalau di global, function jadinya window. tp kalo di object method jadinyan pemilik object method tersebut 
+	function sample() {
+		console.info(this)
+		
+		function inner() {
+			console.info(this)
+		}
+		
+		inner()
+	}
+	
+	sample()
+	
+	const person = {
+		name: "Rafli",
+		sayHello: function(value) {
+			console.info(`Hello ${value} my name is ${this.name}`)
+		}
+	}
+	
+	person.sayHello("Muhammad")
+	person.sayHello("Other")
+</script>

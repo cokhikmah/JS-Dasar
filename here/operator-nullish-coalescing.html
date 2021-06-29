@@ -1,0 +1,23 @@
+<html>
+	<title>Operator Nullish Coalescing</title>
+<script>
+
+	// tanpa nullish coalescing operator
+	let parameter
+	
+	let data = parameter
+	if(data === undefined || data === null) {
+		data = "Nilai Default"
+	}
+	
+	document.writeln(data)
+	
+	// dengan nullish coalescing operator
+	let parameter2
+	
+	let data2 = parameter2 ?? "Nilai Default"
+	
+	alert(data2)
+	
+	
+</script>

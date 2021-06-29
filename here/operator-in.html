@@ -1,0 +1,23 @@
+<html>
+	<title>Operator In</title>
+<script>
+
+	const person = {
+		name: "Muhammad Rafli",
+		age: 23
+	}
+	
+	const result = "name" in person // true
+	document.writeln(`<p> ${result} </p>`)
+	
+	const student = {
+		name: "Muhammad Rafli"
+	}
+	
+	if("name" in student) {
+		alert(`Hello ${student.name}`)
+	} else {
+		alert("Ops")
+	}  
+	
+</script>

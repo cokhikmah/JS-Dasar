@@ -1,0 +1,30 @@
+<html>
+	<title>Operator Logika Non Boolean</title>
+<script>
+
+	console.info("Hello" || "")
+	console.info("" || [])
+	console.info("0" || "NOL")
+	console.info(0 || "0")
+	console.info(null || "null")
+	console.info(undefined || "UNDEFINED")
+	console.info(0 || false)
+	
+	// contoh case
+	const person = {
+		firstName: "",
+		lastName: "Rafli"
+	}
+	
+	const name = person.firstName || person.lastName
+	console.info(name)
+	
+	console.info("Hello" && "")
+	console.info("" && [])
+	console.info("0" && "NOL")
+	console.info(0 && "0")
+	console.info(null && "null")
+	console.info(undefined && "UNDEFINED")
+	console.info(0 && false)
+
+</script>

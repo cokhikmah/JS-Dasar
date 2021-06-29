@@ -1,0 +1,22 @@
+<html>
+	<title>Function Sebagai Value</title>
+<script>
+
+	function sayHello(name) {
+		document.writeln(`<p>Hello ${name}</p>`)
+	}
+	
+	sayHello("Muhammad")
+	
+	const say = sayHello
+	
+	say("Rafli")
+	
+	function giveMeName(callback) {
+		callback("Muhammad") // sayHello("Muhammad")
+	}
+	
+	giveMeName(sayHello)
+	giveMeName(say) // giveMeName(sayHello)
+	
+</script>

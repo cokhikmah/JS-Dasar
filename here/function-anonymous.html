@@ -1,0 +1,22 @@
+<html>
+	<title>Function Anonymous</title>
+<script>
+	
+	const say = function(name) {
+		document.writeln(`<p>hello ${name}</p>`)
+	}
+	
+	say("Muhammad")
+	
+	function giveMeName(callback) {
+		callback("Muhammad")
+	}
+	
+	giveMeName(say)
+	
+	giveMeName(function(name) {
+		document.writeln(`<p>Hi ${name} </p>`)
+	})
+	
+
+</script>

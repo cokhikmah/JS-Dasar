@@ -1,0 +1,35 @@
+<html>
+	<title>Getter dan Setter</title>
+<script>
+
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli",
+		
+		//getter
+		get fullName() {
+			return `${this.firstName} ${this.lastName}`
+		},
+		
+		//setter
+		set fullName(val) {
+			const array = val.split(" ")
+			this.firstName = array[0]
+			this.lastName = array[1]
+		}
+	}
+	
+	// otomatis mamanggil get fullname() / seolah ada function didalam property
+	console.table([person.fullName])
+	
+	person.fullName = "Muhammad Zaki"
+	console.table(person)
+	
+	person.fullName = "Aiyatul Mu`in"
+	console.table(person)
+	
+	person.fullName = "Other Brothers"
+	console.table(person)
+
+</script>
+

@@ -1,0 +1,51 @@
+<html>
+	<title>Scope</title>
+<script>
+
+	// global scope
+	let counter = 0
+	
+	// global scope
+	function hitMe() {
+		// local scope hitMe
+		counter++
+	}
+	
+	// global scope
+	function other() {
+		// local scope other
+		counter++
+	}
+	
+	hitMe()
+	hitMe()
+	
+	console.info(counter)
+	
+	function first() {
+		// local scope first
+		let firstVariable = "First"
+		
+		function firstNested(){
+			console.info(firstVariable)
+			const firstNestedVariable = "First Nested"
+		}
+		
+		firstNested()
+		console.info(firstNestedVariable)
+	}
+	
+	function second() {
+		// local scope second
+		let secondVariable = "Second variable"
+	}
+	
+	first()
+	second()
+	
+	console.info(firstVariable)
+	console.info(secondVariable)
+
+</script>
+
+</script>

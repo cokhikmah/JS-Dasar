@@ -1,0 +1,20 @@
+<html>
+	<title>Object Method Arrow Function</title>
+<script>
+
+	const person = {
+		name: "Rafli",
+		
+		// arrow function
+		sayHello: (name) => {
+		
+		// anonymous function
+		//sayHello: function(name) {
+			console.info(this)
+			console.info(`Hello ${name}, my name is ${this.name}`)
+		}
+	}
+	
+	person.sayHello("Muhammad")
+
+</script>

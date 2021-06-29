@@ -1,0 +1,15 @@
+<html>
+	<title>Masalah Variable Var</title>
+<script>
+
+	// global scope
+	var i = 200
+	
+	for (var i = 0; i < 10; i++) {
+		// local scope
+		console.info(`Local ${i}`)
+	}
+	
+	console.info(`Global ${i}`)
+
+</script>

@@ -1,0 +1,115 @@
+<html>
+	<title>Destructuring</title>
+<script>
+	
+	{
+	const names = ["Muhammad", "Rafli"]
+	const firstName = names[0]
+	const lastName = names[1]
+	
+	console.info(firstName)
+	console.info(lastName)
+	}
+	
+	{
+	const nama = ["Muhammad", "Rafli", "Zaki", "Mu`in"]
+	//destructuring array
+	// ...others adalah spread operator
+	const [namaAwal, namaAkhir, ...others] = nama
+	
+	console.info(namaAwal)
+	console.info(namaAkhir)
+	console.info(others)
+	}
+	
+	{
+	// mengambil data object
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli",
+		address: {
+			street: "Jalan menuju surga",
+			city: "Aceh",
+			country: "Indonesia",
+		},
+		hobby: "Sleep",
+		channel: "cokhikmah"
+	}
+	
+	let  {firstName, lastName, address:{city, street, country}, ...others} = person
+	
+		console.info(firstName)
+		console.info(lastName)
+		console.info(city)
+		console.info(street)
+		console.info(country)
+		console.info(others)
+	}
+	
+	{
+	//destructuring terhadap object
+	function displayPerson({firstName, lastName}) {
+		console.info(firstName)
+		console.info(lastName)
+	}
+	
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli"
+	}
+	
+	displayPerson(person)
+	}
+	
+	{
+	//destructuring terhadap array
+	function sum([first, second]) {
+		return first + second
+	}
+	
+	console.info(sum([1,1]))
+	console.info(sum([10,10]))
+	}
+	
+	{
+	//default value destructuring array
+	const names = ["Muhammad", "Rafli"]
+	const [firstName, lastName, plusName = "cokhikmah"] = names
+	
+	console.info(firstName)
+	console.info(lastName)
+	console.info(plusName)
+	}
+	
+	{
+	//default value destructuring object
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli",
+		plusName: "x"
+	}
+	
+	const {firstName, lastName, plusName = "cokhikmah"} = person
+	console.info(firstName)
+	console.info(lastName)
+	console.info(plusName)
+	}
+	
+	{
+	//menggunakan variable lain
+	const person = {
+		firstName: "Muhammad",
+		lastName: "Rafli",
+		plusName: "x"
+	}
+	
+	let {firstName: namaDepan,
+		lastName: namaBelakang = "Cok",
+		plusName: plusName} = person
+	
+	console.info(namaDepan)
+	console.info(namaBelakang)
+	console.info(plusName)
+	}
+
+</script>
